@@ -113,39 +113,50 @@ $(document).ready(function(){
             scrollTop: 0
         }, 1500, "easeInOutExpo")
     });
+
+    // Get the modals
+	var androidModal = document.getElementById('androidModal');
+	var graphicsModal = document.getElementById('graphicsModal');
+	var webModal = document.getElementById('webModal');
+	var fullModal = document.getElementById('fullModal');
+
+	// Get the triggers that opens the modals
+	var androidTrigger = document.getElementById("androidTrigger");
+	var graphicsTrigger = document.getElementById("graphicsTrigger");
+	var webTrigger = document.getElementById("webTrigger");
+	var fullTrigger = document.getElementById("fullTrigger");
+
+
+	// When the user clicks the button, open the modal 
+	androidTrigger.onclick = function() {
+	    androidModal.style.display = "block";
+	}
+
+	graphicsTrigger.onclick = function() {
+	    graphicsModal.style.display = "block";
+	}
+
+	webTrigger.onclick = function() {
+	    webModal.style.display = "block";
+	}
+
+	fullTrigger.onclick = function() {
+	    fullModal.style.display = "block";
+	}
+
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == androidModal) {
+	        androidModal.style.display = "none";
+	    } else if(event.target == graphicsModal){
+	    	graphicsModal.style.display = "none";
+	    } else if(event.target == webModal){
+	    	webModal.style.display = "none";
+	    } else if(event.target == fullModal){
+	    	fullModal.style.display = "none";
+	    }
+	}
 	
 });
 
-
-// ==========  START GOOGLE MAP ========== //
-function initialize() {
-    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
-
-    var mapOptions = {
-        zoom: 14,
-        center: myLatLng,
-        disableDefaultUI: true,
-        scrollwheel: false,
-        navigationControl: false,
-        mapTypeControl: false,
-        scaleControl: false,
-        draggable: false,
-        mapTypeControlOptions: {
-            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'roadatlas']
-        }
-    };
-
-    var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-
-
-    var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        icon: 'img/location-icon.png',
-        title: '',
-    });
-
-}
-
-google.maps.event.addDomListener(window, "load", initialize);
-// ========== END GOOGLE MAP ========== //
