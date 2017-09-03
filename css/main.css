@@ -206,7 +206,7 @@ body > section,
 }
 
 .carousel-caption {
-  top: 50%;
+  top: 62%;
 }
 
 .carousel-caption h2 {
@@ -298,9 +298,6 @@ top: -8px;
   background-color: #2c3e50;
 }
 
-.hobbies h2 {
-  color: #000000;
-}
 
 .owl-controls {
   bottom: -45px;
@@ -352,8 +349,26 @@ top: -8px;
 
 
 /*=========================================
-	Our Works
+	Hobbies
 ==========================================*/
+
+.works{
+  padding-top: 20px;
+  padding-bottom: 2px;
+  background-color: #2c3e50;
+}
+
+.hobbies h2{
+  color: white;
+}
+
+.hobbiesText{
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 18px;
+  color: white;
+}
+
 
 .work-filter {
   margin-bottom: 35px;
@@ -364,7 +379,7 @@ top: -8px;
 }
 
 .work-filter ul li a {
-  color: #062033;
+  color: white;
   display: block;
   font-size: 14px;
   font-weight: 700;
@@ -466,6 +481,11 @@ top: -8px;
 /*=========================================
 	Our Team Member
 ==========================================*/
+
+.team{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 .member-thumb {
   width: 273px;
@@ -780,7 +800,7 @@ label.error {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 15%; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
