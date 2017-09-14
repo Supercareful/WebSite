@@ -202,7 +202,8 @@ body > section,
 }
 
 #slider .carousel-inner .item {
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .carousel-caption {
@@ -881,3 +882,16 @@ label.error {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.gitResume a p{
+}
+
+.gitResume p{
+  text-align: center;
+  color: navy;
+}
+
+
+
+
+
