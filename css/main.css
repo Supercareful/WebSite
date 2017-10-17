@@ -482,35 +482,10 @@ top: -8px;
 /*=========================================
 	Our Team Member
 ==========================================*/
-/*#androidTrigger{
-  min-width: 20%;
-  max-width: 20%;
-}
 
-#graphicsTrigger{
-  min-width: 20%;
-  max-width: 20%;
-}
-
-#webTrigger{
-  min-width: 20%;
-  max-width: 20%;
-}
-
-#fullTrigger{
-  min-width: 20%;
-  max-width: 20%;
-}*/
-
-
-
-#widthTester{
+#containerArea{
   min-width: 90%;
 }
-
-/*#widthTest{
-  min-width: 100%;
-}*/
 
 .team{
   padding-top: 20px;
