@@ -203,8 +203,8 @@
         ==================================== -->		
 		
 		<section id="team" class="team">
-			<div class="container">
-				<div class="row">
+			<div class="container" id="widthTester">
+				<div class="row" id="widthTest">
 		
 					<div class="sec-title text-center projects wow fadeInUp animated" data-wow-duration="700ms">
 						<h2>Projects</h2>
@@ -283,6 +283,21 @@
 						</div>
 						<h4>Full Stack App</h4>
 					</figure>
+
+					<!-- single member -->
+					<figure id="hangmanTrigger" class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/team/hangman.jpg" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5>Hangman</h5>
+								<p>2017</p>
+								<ul class="information">
+								<img src="img/team/info2.png">
+								</ul>
+							</figcaption>
+						</div>
+						<h4>Javascript Game</h4>
+					</figure>
 					<!-- end single member -->
 				</div>
 			</div>
@@ -358,6 +373,25 @@
 				    </div>
 				    <div class="modal-footer">
 				      <button class="modalButton" onclick="window.open('http://54.242.142.24:3030/','_blank')" >Preview</button>
+				    </div>
+				  </div>
+				 </div>
+
+				 <!-- Modal for hangman -->
+				<div id="hangModal" class="modal">
+				  <!-- Modal content -->
+				  <div class="modal-content">
+				    <div class="modal-header">
+				      <h2>Hangman</h2>
+				    </div>
+				    <div class="modal-body">
+				    <p></p>
+				      <p>Hangman game made in my freetime as a personal project. Works on all modern web browsers along with Android and IOS devices</p>
+				      <p>Made using Javascript, HTML5, and CSS.</p>
+				    </div>
+				    <div class="modal-footer">
+				      <button class="modalButton" onclick="window.open('https://supercareful.github.io/hangman/','_blank')" >Preview</button>
+				      <button class="modalButton" onclick="window.open('https://github.com/Supercareful/hangman','_blank')" >View Code</button>
 				    </div>
 				  </div>
 				 </div>

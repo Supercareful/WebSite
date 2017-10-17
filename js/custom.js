@@ -119,12 +119,14 @@ $(document).ready(function(){
 	var graphicsModal = document.getElementById('graphicsModal');
 	var webModal = document.getElementById('webModal');
 	var fullModal = document.getElementById('fullModal');
+	var hangModal = document.getElementById('hangModal');
 
 	// Get the triggers that opens the modals
 	var androidTrigger = document.getElementById("androidTrigger");
 	var graphicsTrigger = document.getElementById("graphicsTrigger");
 	var webTrigger = document.getElementById("webTrigger");
 	var fullTrigger = document.getElementById("fullTrigger");
+	var hangmanTrigger = document.getElementById("hangmanTrigger");
 
 
 	// When the user clicks the button, open the modal 
@@ -144,6 +146,10 @@ $(document).ready(function(){
 	    fullModal.style.display = "block";
 	}
 
+	hangmanTrigger.onclick = function() {
+	    hangModal.style.display = "block";
+	}
+
 
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
@@ -155,6 +161,8 @@ $(document).ready(function(){
 	    	webModal.style.display = "none";
 	    } else if(event.target == fullModal){
 	    	fullModal.style.display = "none";
+	    } else if(event.target == hangModal){
+	    	hangModal.style.display = "none";
 	    }
 	}
 	
