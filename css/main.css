@@ -487,8 +487,11 @@ top: -8px;
   min-width: 90%;
 }
 
-#containerArea .col-md-3{
+@media (min-width: 992px){
+#containerArea .col-md-3 {
   width: 20%;
+  float: left;
+}
 }
 
 
