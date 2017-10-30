@@ -487,6 +487,14 @@ top: -8px;
   min-width: 90%;
 }
 
+@media (min-width: 992px){
+#containerArea .col-md-3 {
+  width: 20%;
+  float: left;
+}
+}
+
+
 .team{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -559,6 +567,7 @@ top: -8px;
 /*=========================================
 	Some fun facts
 ==========================================*/
+
 
 #facts {
 	background-image: url("../img/parallax/city.jpg");
