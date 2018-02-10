@@ -120,6 +120,7 @@ $(document).ready(function(){
 	var webModal = document.getElementById('webModal');
 	var fullModal = document.getElementById('fullModal');
 	var hangModal = document.getElementById('hangModal');
+	var flashModal = document.getElementById('flashModal');
 
 	// Get the triggers that opens the modals
 	var androidTrigger = document.getElementById("androidTrigger");
@@ -127,6 +128,7 @@ $(document).ready(function(){
 	var webTrigger = document.getElementById("webTrigger");
 	var fullTrigger = document.getElementById("fullTrigger");
 	var hangmanTrigger = document.getElementById("hangmanTrigger");
+	var flashcardTrigger = document.getElementById("flashTrigger");
 
 
 	// When the user clicks the button, open the modal 
@@ -150,6 +152,10 @@ $(document).ready(function(){
 	    hangModal.style.display = "block";
 	}
 
+	flashcardTrigger.onclick = function() {
+	    flashModal.style.display = "block";
+	}
+
 
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
@@ -163,6 +169,8 @@ $(document).ready(function(){
 	    	fullModal.style.display = "none";
 	    } else if(event.target == hangModal){
 	    	hangModal.style.display = "none";
+	    }else if(event.target == flashModal){
+	    	flashModal.style.display = "none";
 	    }
 	}
 	
